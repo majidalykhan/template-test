@@ -1,7 +1,6 @@
 
-
 window.onload = function() {
-
+    
     const quoteContainer = document.getElementById('quote-container');
     const quoteText = document.getElementById('quote');
     const authorText = document.getElementById("author");
@@ -30,6 +29,7 @@ async function getQuote(){
     loading();
 
     const apiUrl = 'http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json';
+    
 
     try {
         const response = await fetch(apiUrl);
